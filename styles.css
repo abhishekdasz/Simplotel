@@ -8,6 +8,8 @@
 {
     height: 100vh;
     display: grid;
+    background: rgb(255,241,179);
+    background: linear-gradient(90deg, rgba(255,241,179,1) 0%, rgba(255,214,205,1) 50%, rgba(255,181,237,1) 100%);
 }
 .page2-container
 {
@@ -26,7 +28,8 @@
     grid-template-rows: repeat(2, 1fr);
 }
 
-.img-box {
+.img-box 
+{
     background-size: cover; /* Ensures the background image covers the entire container */
     background-position: center; /* Centers the background image within the container */
     height: 100%; /* Ensures the container takes up the full height of its parent */
