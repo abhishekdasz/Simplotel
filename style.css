@@ -190,6 +190,10 @@
 
 
 @media only screen and (max-width: 600px) {
+    .page1
+    {
+        position: relative;
+    }
     .hero-section
     {
         flex-direction: column;
@@ -200,6 +204,7 @@
     .hamburger-menu 
     {
         padding: 1rem;
+        margin-right: 0;
     }
 
     .left, .right {
@@ -208,6 +213,7 @@
 
     .left .contents {
         padding: 1rem;
+        gap: 1rem;
     }
 
     .left h1 {
@@ -223,10 +229,26 @@
     .left .btn {
         width: 100%;
     }
+    .navbar-section
+    {
+        position: absolute;
+        right: 0px;
+        background-color: transparent;
+    }
 
     .page2
     {
         flex-direction: column;
+        height: 100svh;
+        padding: 0;
+    }
+    .page2 .leftt
+    {
+        padding: 1rem;
+    }
+    .left-col img
+    {
+        height: 47.7%;
     }
 }
 
