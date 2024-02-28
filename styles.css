@@ -1,0 +1,96 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.page2 
+{
+    height: 100vh;
+    display: grid;
+}
+.page2-container
+{
+    display: flex;
+    gap: 2rem;
+    padding: 5rem;
+}
+
+.page2-left
+{
+    flex-basis: 50%;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 100px;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.img-box {
+    background-size: cover; /* Ensures the background image covers the entire container */
+    background-position: center; /* Centers the background image within the container */
+    height: 100%; /* Ensures the container takes up the full height of its parent */
+}
+
+
+#img-box2
+{
+    grid-row: span 2;
+}
+
+.page2-right
+{
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button
+{
+    background: #ff7070;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 500px;
+}
+
+.button p 
+{
+    font-size: 1.2rem;
+}
+
+.button h1
+{
+    font-size: 3rem;
+}
+
+.click
+{
+    display: flex;
+    font-size: 1.2rem;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+
+
+@media only screen and (max-width: 600px) 
+{
+    .page2-container
+    {
+        flex-direction: column;
+        padding: 1rem;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) 
+{
+    .page2-container
+    {
+        flex-direction: column;
+        padding: 1rem;
+    }
+}

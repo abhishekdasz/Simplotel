@@ -253,30 +253,46 @@
 }
 
 /* Tablet styles */
+/* Tablet styles */
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Navbar */
     .navbar p {
         gap: 2rem;
     }
 
+    /* Hero section */
+    .hero-section {
+        flex-direction: column;
+    }
+
+    /* Left contents */
     .left .contents {
         padding: 2rem;
+        gap: 1rem;
     }
 
     .left h1 {
-        font-size: 3rem;
+        font-size: 5rem;
         letter-spacing: 0.4rem;
     }
 
     .left p {
-        font-size: 1.5rem;
-        line-height: 2rem;
+        font-size: 2rem;
+        line-height: 3rem;
     }
 
     .left .btn {
         width: 50%;
     }
-    .page2 
-    {
+
+    /* Page 2 */
+    .page2 {
         flex-direction: column;
+        height: auto;
+        padding: 0;
+    }
+
+    .page2 .leftt {
+        padding: 0 3rem;
     }
 }
